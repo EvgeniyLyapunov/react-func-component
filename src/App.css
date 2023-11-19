@@ -32,6 +32,7 @@ h3 {
 }
 
 .window {
+  position: relative;
   background: #fff;
   width: 470px;
   display: -webkit-box;
@@ -42,6 +43,13 @@ h3 {
   position: relative;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
+
+.button {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+}
+
 .options {
   display:-webkit-box;
   display:-webkit-flex;
@@ -100,6 +108,18 @@ h3 {
   background-position:center top;
 }
 
+.highlight-window-blue {
+  height: 550px;
+  width: 400px;
+  background: #ccc;
+  background: url('./assets/item-blue.jpg');
+  background-size: cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position:relative;
+  background-position:center top;
+}
+
 .color {
   height: 30px;
   cursor:pointer;
@@ -122,6 +142,22 @@ h3 {
           transition:opacity .4s ease;
   background-position:center top;
 }
+
+.highlight-overlay-blue {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  filter: alpha(opacity=0);
+ background:url('./assets/item-blue.jpg');
+  background-size:cover;
+  -webkit-transition:opacity .4s ease;
+          transition:opacity .4s ease;
+  background-position:center top;
+}
+
 .background-element {
   background: #457;
   position: absolute;
@@ -135,6 +171,7 @@ h3 {
   -webkit-transition:background .6s ease;
           transition:background .6s ease;
 }
+
 .color.overlay {
   position:absolute;
   z-index:10;

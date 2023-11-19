@@ -11,6 +11,7 @@ const ShopItem: FC<IProps> = ({ item }) => {
 		<div className='main-content'>
 			<h2>{brand}</h2>
 			<h1>{title}</h1>
+			<span>Black color</span>
 			<h3>{description}</h3>
 			<div className='description'>{descriptionFull}</div>
 			<div className='highlight-window mobile'>
